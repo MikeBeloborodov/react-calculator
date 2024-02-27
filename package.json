@@ -5,13 +5,23 @@
   "main": "./src/index.tsx",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.js --env env=prod",
-    "start": "webpack serve --config webpack/webpack.config.js --env env=dev"
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "keywords": [],
   "author": "https://github.com/MikeBeloborodov",
   "license": "ISC",
   "devDependencies": {
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.11",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/addon-onboarding": "^1.0.11",
+    "@storybook/blocks": "^7.6.17",
+    "@storybook/react": "^7.6.17",
+    "@storybook/react-webpack5": "^7.6.17",
+    "@storybook/test": "^7.6.17",
     "@types/node": "^20.11.20",
     "@types/react": "^18.2.58",
     "@types/react-dom": "^18.2.19",
@@ -27,6 +37,7 @@
     "react-refresh": "^0.14.0",
     "sass": "^1.71.1",
     "sass-loader": "^14.1.1",
+    "storybook": "^7.6.17",
     "style-loader": "^3.3.4",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",

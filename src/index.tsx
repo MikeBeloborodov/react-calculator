@@ -1,4 +1,18 @@
-import "./styles/index.scss";
-import style from "./styles/index.module.scss";
-console.log("hello world");
-console.log(style);
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Calculator from "./components/calculator/Calculator";
+
+function App() {
+  return (
+    <>
+      <Calculator />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
